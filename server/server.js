@@ -41,7 +41,7 @@ app.use(passport.session()); // will call the deserializeUser
 // Use routers
 app.use("/api/user", api);
 
-// If its production environment!
+// If its production environment
 if (process.env.NODE_ENV === 'production') {
 	const path = require('path');
 	// console.log('YOU ARE IN THE PRODUCTION ENV');
